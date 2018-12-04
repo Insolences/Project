@@ -359,8 +359,8 @@ ul {
     float: right;
     border: 8px solid #89b726;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
 }
 
 .banner-image img{
@@ -385,7 +385,7 @@ ul {
     overflow: hidden;
     width: 294px;
     float: left;
-    margin-left: 14px;
+    margin-left: 11px;
 }
 
 .content{
@@ -470,10 +470,6 @@ ul {
     margin-left: 8px;
     padding-top: 22px;
     background: url("../images/bugs.png") no-repeat 210px 6px ;
-}
-
-.content{
-float: right;
 }
 
 .content-head {
@@ -591,7 +587,7 @@ float: right;
     position: relative;
     width: 288px;
     margin-bottom: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     overflow: hidden;
 }
 
@@ -658,7 +654,7 @@ tr,th{
     color: #ffffff;
     margin-top: 10px;
     line-height: 13.5px;
-    font-size: 11.5px;
+    font-size: 11px;
 }
 
 .footer p:first-child{
