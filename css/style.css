@@ -329,22 +329,21 @@ ul {
 .banner-menu ul li ul{
     z-index: 999;
     position: absolute; /* Подменю позиционируются абсолютно */
-    display: none; /* Скрываем подменю */
     right: -140px; /* Сдвигаем подменю вправо */
-    top: -2px; /* Сдвигаем подменю вверх */
+    top: -9999px; /* Сдвигаем подменю вверх */
     width: 198px;
     border: 2px solid white;
     padding-top: 6px;
-    opacity: 0.1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out ;
+    -o-transition: opacity 0.3s ease-in-out  ;
+    -webkit-transition: opacity 0.3s ease-in-out ;
 }
 
 .banner-menu ul li:hover ul{
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
     opacity: 1;
-    transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out ;
-    -o-transition: all 2s ease-in-out  ;
-    -webkit-transition: all 2s ease-in-out ;
+    top: -2px;
 }
 
 .banner-menu ul li ul li{
