@@ -123,12 +123,6 @@ ul {
     text-decoration: none;
     border-bottom: none;
 }
-.banner-menu ul .orange-bg:hover{
-    transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out ;
-    -o-transition: all 2s ease-in-out  ;
-    -webkit-transition: all 2s ease-in-out ;
-}
 
 .banner-menu ul .orange-bg:hover .orange-text li a{
     display: block;
@@ -329,22 +323,21 @@ ul {
 .banner-menu ul li ul{
     z-index: 999;
     position: absolute; /* Подменю позиционируются абсолютно */
-    display: none; /* Скрываем подменю */
     right: -140px; /* Сдвигаем подменю вправо */
     top: -2px; /* Сдвигаем подменю вверх */
     width: 198px;
     border: 2px solid white;
     padding-top: 6px;
-    opacity: 0.1;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out ;
+    -o-transition: opacity 0.2s ease-in-out  ;
+    -webkit-transition: opacity 0.2s ease-in-out ;
 }
 
 .banner-menu ul li:hover ul{
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
+
     opacity: 1;
-    transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out ;
-    -o-transition: all 2s ease-in-out  ;
-    -webkit-transition: all 2s ease-in-out ;
 }
 
 .banner-menu ul li ul li{
@@ -375,10 +368,9 @@ ul {
 }
 
 .banner-image{
-    float: right;
     border: 8px solid #89b726;
     position: absolute;
-    right: 0;
+    right: 4px;
     top: 0;
 }
 
@@ -402,39 +394,45 @@ ul {
 }
 
 .holder{
-    width: 930px;
+    width: 918px;
     margin: 0 auto;
-    background: white;
     overflow: hidden;
     padding-bottom: 113px;
+    padding-top: 12px;
 
 }
 
 .sidebar{
-    overflow: hidden;
     width: 294px;
     float: left;
-    margin-left: 11px;
 }
 
 .content{
     float: left;
-    width: 622px ;
+    width: 624px ;
+    position: relative;
+}
+.content-post{
+    overflow: hidden;
+    margin-left: 2px;
+    margin-top: 328px;
 }
 
-.news{
+.orange_h3{
     width: 260px;
     background: #f09404;
     font-size: 17px;
     padding: 12px 10px ;
     border: 2px solid#fff;
     box-shadow: 1px 2px 5px #e2e2e2;
+    color: white;
 }
 
 .news-events{
-    margin-top: 12px;
-    width: 260px;
-
+    padding-top: 20px;
+    padding-left: 12px;
+    margin-right: 0px;
+    width: 280px;
 }
 
 .news a, .contact a{
@@ -449,7 +447,7 @@ ul {
 }
 
 .date{
-    text-align: right;
+    float: right;
 }
 
 .read-more{
@@ -467,20 +465,26 @@ ul {
     background: url("../images/Sidebar-line.jpg") no-repeat;
     margin: 10px auto;
 }
-
+.sidebar-line-blue{
+    height: 8px;
+    background: url("../images/Sidebar-line-blue.jpg") no-repeat;
+    margin: 10px auto;
+}
 .contact{
     margin-top: 12px;
+    margin-left: 12px;
     overflow: hidden;
     width: 262px;
 }
 
-.contact-us{
+.yellow_h3{
     width: 260px;
     background: #f7cc04;
     font-size: 17px;
     padding: 12px 10px ;
     border: 2px solid#fff;
     box-shadow: 1px 2px 5px #e2e2e2;
+    color: white;
 }
 
 .news-text{
@@ -496,17 +500,13 @@ ul {
     text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px, #e2e2e2 2px 2px 2px;
 }
 
-.welcom{
-    margin-top: 57px;
-}
-
 .contact-margin{
     margin-left: 8px;
     padding-top: 22px;
-    background: url("../images/bugs.png") no-repeat 210px 6px ;
+    background: url("../images/bugs.png") no-repeat 216px 16px; ;
 }
 
-.content-head {
+.blue_h3 {
     width: 472px;
     background: #2a98c6;
     font-size: 17px;
@@ -515,14 +515,37 @@ ul {
     color: white;
     border: 2px solid#fff;
     box-shadow: 1px 2px 5px #e2e2e2;
+    color: white;
 }
-
+.orange_h3_page_2{
+    width: 472px;
+    background: #f09404;
+    font-size: 17px;
+    padding: 12px 10px;
+    margin-bottom: 22px;
+    color: white;
+    border: 2px solid#fff;
+    box-shadow: 1px 2px 5px #e2e2e2;
+    color: white;
+}
+.blue_h3_page_2 {
+    width: 260px;
+    background: #2a98c6;
+    font-size: 17px;
+    padding: 12px 10px;
+    margin-bottom: 12px;
+    color: white;
+    border: 2px solid#fff;
+    box-shadow: 1px 2px 5px #e2e2e2;
+    color: white;
+}
 .content-margin{
-    margin-left: 8px;
+    margin-left: 18px;
     text-align: justify;
     width: 558px;
+    overflow: hidden;
 }
-.content-margin p:first-child{
+.content-margin p{
     margin-bottom: 10px;
 }
 .find-more{
@@ -531,16 +554,31 @@ ul {
     margin-bottom: 38px ;
     font-size: 13px;
 }
-
+.contact-us{
+    color: #f09404;
+    text-decoration: underline;
+}
 .find-more a{
     color:#2a98c6 ;
-}
 
+}
+.traces{
+    position: absolute;
+    top: 289px;
+    right: 441px;
+    z-index: 9999;
+}
+.traces-sidebar{
+    position: absolute;
+    bottom: 83px;
+    left: 356px;
+    z-index: 9999;
+}
 .content-line{
     height: 16px;
     width: 598px;
     background: url("../images/content-line.jpg") no-repeat;
-    margin: -30px auto;
+    margin: 12px auto 0 auto;
 }
 
 .content-line-green{
@@ -549,10 +587,15 @@ ul {
     background: url("../images/content-line-green.jpg") no-repeat;
     margin: 16px 16px;
 }
-
+.content-line-orange{
+    height: 16px;
+    width: 598px;
+    background: url("../images/content-line-orange.jpg") no-repeat;
+    margin: 16px 16px;
+}
 .content-image{
     width: 625px;
-    margin-top: 44px;
+    margin-top: 21px;
     overflow: hidden;
 }
 
@@ -572,7 +615,12 @@ ul {
 .daycamps-image{
     border: 5px solid #2a98c6;
 }
-
+.daycamps-image_page_2{
+    border: 5px solid #2a98c6;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
 .daycamps-img-text{
     position: absolute;
     left: -4px;
@@ -651,11 +699,31 @@ ul {
     text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px, #e2e2e2 3px 3px 2px;
     letter-spacing: 2px;
 }
+.go-orange-content:after{
+    display: block;
+    content: '';
+    background: url("../images/arrow_orange.png") no-repeat;
+    position: absolute;
+    right: 132px;
+    bottom: 2px;
+    height: 26px;
+    width: 29px;
+}
 .go-green-content{
     font: 25px Floraless;
     color: #89b726;
     text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px, #e2e2e2 3px 3px 2px;
     letter-spacing: 2px;
+}
+.go-green-content:after{
+    display: block;
+    content: '';
+    background: url("../images/arrow_green.png") no-repeat;
+    position: absolute;
+    right: 132px;
+    bottom: 2px;
+    height: 26px;
+    width: 29px;
 }
 .go-blue-content{
     font: 25px Floraless;
@@ -663,11 +731,42 @@ ul {
     text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px, #e2e2e2 3px 3px 2px;
     letter-spacing: 2px;
 }
-.view-content{
+.go-blue-content:after{
+    display: block;
+    content: '';
+    background: url("../images/arrow_blue.png") no-repeat;
+    position: absolute;
+    right: 132px;
+    bottom: 2px;
+    height: 26px;
+    width: 29px;
+}
+.view-content, .view-content-page-2{
     font: 25px Floraless;
     color: #89b726;
     text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px, #e2e2e2 3px 3px 2px;
     letter-spacing: 2px;
+}
+
+.view-content-page-2:after{
+    display: block;
+    content: '';
+    width: 44px;
+    height: 24px;
+    background: url('../images/arrow_green.png') no-repeat;
+    position: absolute;
+    top: 54px;
+    right: 180px;
+}
+.view-content:after{
+    display: block;
+    content: '';
+    width: 44px;
+    height: 24px;
+    background: url('../images/arrow_green.png') no-repeat;
+    position: absolute;
+    bottom: 6px;
+    left: 78px;
 }
 .arrow{
     padding-top: 0;
@@ -693,7 +792,28 @@ ul {
     padding-bottom: 0;
     overflow: hidden;
 }
+.gallery_page_2{
+    float: left;
+    position: relative;
+    width: 288px;
+    margin-bottom: 100px;
+    padding-bottom: 0;
 
+}
+.gallery-view{
+    float: right;
+    width: 324px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.gallery-view-page-2{
+    float: right;
+    width: 324px;
+    position: relative;
+    margin-top: 60px;
+    padding-left: 22px
+}
 .gallery img{
     display: block;
 }
@@ -781,11 +901,26 @@ tr,th{
 .footer-content{
     width: 922px;
     margin: 33px auto 0 ;
+    position: relative;
     background: url("../images/bugs_footer.png") no-repeat 721px 15px;
 }
 
 .cleaver{
     position: absolute;
-    top: -44px;
-    right: 434px;
+    top: -77px;
+    right: -50px;
+}
+.other_nurseries{
+    margin-left: 12px;
+}
+.other_nurseries a{
+    color: #747674;
+    font:  16px Verdana;
+}
+.other_nurseries li{
+    margin-top: 6px;
+}
+.other_nurseries li ul{
+    margin-left: 38px;
+    margin-top: 6px;
 }
